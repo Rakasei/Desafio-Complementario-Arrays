@@ -1,13 +1,28 @@
-alert("Bienvenido al Servicio de Cálculo de Impuestos de Productos Adquiridos en la Plataforma de Steam (SCIPAPS")
 
-function pais de residencia
-const pais = prompt("¿En que país vivís?")
+alert("Bienvenido al Servicio de Cálculo de Impuestos de Productos Adquiridos en la Plataforma de Steam (SCIPAPS)")
 
-if (pais = argentina){    
-    alert("Perfecto, ingresá el valor del producto que querés adquirir y SCIPAPS obtendrá el valor real con impuestos")}
-   else {
-    alert("Este servicio es solo para residentes de Argentina")
-        }
+
+let pais = prompt("¿En qué país vivís?");
+
+if(pais != null){
+pais = pais.toLowerCase();}
+
+ while(pais != "argentina") { 
+    alert("Este servicio únicamente sirve para las compras en Steam realizadas desde Argentina");
+    pais = prompt("¿En qué país vivís?");
+ }
+
+ alert('Bien, ¡SCIPAPS es ideal para vos!');
+
+ function SCIPAPS() {
+ let precio = prompt("¿Cuánto sale el producto (en pesos) que queres calcular?")
+
+
+ alert("El producto con impuestos agregados vale " + precio * 1.75)}
+
+ while (true){
+  SCIPAPS()
+ }
 
 
 
