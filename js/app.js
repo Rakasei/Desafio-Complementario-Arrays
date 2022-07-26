@@ -1,7 +1,6 @@
 
 alert("Bienvenido al Servicio de Cálculo de Impuestos de Productos Adquiridos en la Plataforma de Steam (SCIPAPS)")
 
-
 let pais = prompt("¿En qué país vivís?");
 
 if(pais != null){
@@ -12,6 +11,7 @@ pais = pais.toLowerCase();}
     pais = prompt("¿En qué país vivís?");
  }
 
+
  alert('Bien, ¡SCIPAPS es ideal para vos!');
 
  function SCIPAPS() {
@@ -19,6 +19,7 @@ pais = pais.toLowerCase();}
 
 
  alert("El producto con impuestos agregados vale " + precio * 1.75)}
+
 
  while (true){
   SCIPAPS()
