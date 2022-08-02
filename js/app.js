@@ -1,29 +1,18 @@
 
-alert("Bienvenido al Servicio de Cálculo de Impuestos de Productos Adquiridos en la Plataforma de Steam (SCIPAPS)")
+let nameMovies = ['Lord of the rings', 'Scary Movie', 'Pineapple Express', 'Jack Ass 2']
 
-let pais = prompt("¿En qué país vivís?");
+alert("Bienvenido al listado de peliculas favoritas")
 
-if(pais != null){
-pais = pais.toLowerCase();}
+for (let i = 0; i < nameMovies.length; i++) {
+   alert(nameMovies[i]);
+}
 
- while(pais != "argentina") { 
-    alert("Este servicio únicamente sirve para las compras en Steam realizadas desde Argentina");
-    pais = prompt("¿En qué país vivís?");
- }
-
-
- alert('Bien, ¡SCIPAPS es ideal para vos!');
-
- function SCIPAPS() {
- let precio = prompt("¿Cuánto sale el producto (en pesos) que queres calcular?")
-
-
- alert("El producto con impuestos agregados vale " + precio * 1.75)}
-
-
- while (true){
-  SCIPAPS()
- }
-
+function addMovies(movie){
+ nameMovies.push(movie)
+alert("Listado de tus peliculas favoritas")
+ for (let i = 0; i < nameMovies.length; i++) {
+    alert(nameMovies[i]);
+ } }
+ addMovies(prompt("Podes agregarle una pelicula nueva")) 
 
 
